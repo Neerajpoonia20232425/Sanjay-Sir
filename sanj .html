@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Status of the File</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background-color: #b71c1c;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .timestamp {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #f5f5f5;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 15px 20px;
+      border-bottom: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+
+    .label {
+      font-weight: bold;
+      background-color: #f9f9f9;
+      width: 35%;
+    }
+
+    .value {
+      background-color: #ffffff;
+    }
+
+    @media screen and (max-width: 600px) {
+      td {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Status of the File</h1>
+      <div class="timestamp" id="datetime"></div>
+    </div>
+
+    <table>
+      <tr><td class="label">Name</td><td class="value">Sanjay Aneappa Atale</td></tr>
+      <tr><td class="label">Mobile Number</td><td class="value">9423075881</td></tr>
+      <tr><td class="label">PAN</td><td class="value">AAVPA9173B</td></tr>
+      <tr><td class="label">Aadhar</td><td class="value">XXXX XXXX 1130</td></tr>
+      <tr><td class="label">File Number</td><td class="value">ECOI00658221R</td></tr>
+      <tr><td class="label">Account</td><td class="value">50100684284389</td></tr>
+      <tr><td class="label">IFSC</td><td class="value">HDFC0008134</td></tr>
+      <tr><td class="label">Fund Value</td><td class="value">INR 25,09,155/-</td></tr>
+      <tr><td class="label">File Owner</td><td class="value">Senior Manager</td></tr>
+      <tr><td class="label">NOC Status</td><td class="value">NOC Updated to HDFC Account</td></tr>
+      <tr><td class="label">Upload Status</td><td class="value">Fund Uploaded</td></tr>
+      <tr><td class="label">Approval Status</td><td class="value">Transfer Initiated</td></tr>
+      <tr><td class="label">Pendency if Any</td><td class="value"> Total Pendency for INR 3,67,000/- Including Full & FInal Settlement, NOC to be reissued for INR 49,000/-. 
+
+</td></tr>
+    </table>
+  </div>
+
+  <script>
+    // JavaScript to display current date and time
+    const now = new Date();
+    const options = {
+      weekday: 'long', year: 'numeric', month: 'long',
+      day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit'
+    };
+    document.getElementById('datetime').textContent = now.toLocaleString('en-IN', options);
+  </script>
+
+</body>
+</html>
